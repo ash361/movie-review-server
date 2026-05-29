@@ -1,4 +1,5 @@
-# Server Setup Documentation
+# Server Setup Documentation 
+Student 33747568
 
 This document provides a complete, reproducible guide for deploying the Azure VM, installing Nginx, configuring the website, and preparing the server environment. Following these steps, another ICT171 student should be able to rebuild the server in under an hour.
 
