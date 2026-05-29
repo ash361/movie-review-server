@@ -1,11 +1,10 @@
 # Movie Review Website – Cloud Server Project
 
 ## 1. Overview
-This project implements a cloud-hosted movie review website deployed on an Azure Ubuntu Server using Infrastructure-as-a-Service (IaaS). The server is manually configured using Linux command-line tools, Nginx, and custom HTML pages.
+This project implements a cloud-hosted movie review website deployed on an Azure Ubuntu Server using Infrastructure-as-a-Service (IaaS). The server is manually configured using Linux command-line tools and custom HTML pages.
 
 **Public IP: 20.213.10.100**
-**Domain Name:**  
-**GitHub Repository:** (this page)
+
 
 This documentation provides all steps required to recreate the server from scratch.
 
@@ -16,24 +15,40 @@ This documentation provides all steps required to recreate the server from scrat
 - SSH access for administration
 
 
-## 3. Azure VM Deployment
-
-### 3.1 Create the VM
-- Image: Ubuntu Server 22.04 LTS  
-- Size: Standard B1s  
-- Authentication: Password  
-- Inbound ports: SSH (22), HTTP (80)
-
-### 3.2 Connect via SSH
-
-If password is lost, use Azure → VM → Reset Password.
-
-## 4. Initial Server Setup
+## 3. Project Features
+- Fully deployed cloud server using Azure IaaS  
+- Multi‑page movie review website  
+- Custom HTML and CSS  
+- Organised directory structure (/var/www/html/reviews/)  
+- Professional documentation and reproducibility focus  
 
 
-## 5. Website Deployment
+## 4. Technologies Used
+- **Azure** (Virtual Machine, networking, public IP)
+- **Ubuntu Server 22.04 LTS**
+- **SSH** (remote administration)
+- **HTML/CSS** (website content)
+- **GitHub** (documentation + version control)
 
-### 5.1 Navigate to web root
 
-### 5.3 Add custom homepage
-Your `index.html` contains links to all movie review pages
+## 5. Deployment Summary
+The server was deployed using the Azure Portal and configured via SSH. The website consists of a homepage and five individual movie review pages.
+
+Full technical steps are documented in:  
+**docs/server-setup.md**
+
+
+## 6. Troubleshooting Log
+A record of issues encountered and solutions applied during development.
+
+- Resetting SSH password using Azure “Reset Password”
+- Correcting file permissions after creating new directories
+
+
+## 7. Future Improvements
+- Add external CSS stylesheet  
+- Add navigation bar  
+- Add backend (Python/Node)  
+- Add database for dynamic reviews  
+- Implement CI/CD pipeline  
+- Add HTTPS enforcement  
